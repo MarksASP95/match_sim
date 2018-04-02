@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Match Simulator</title>
+</head>
+<body>
+    
+    <div id="container">
+        <p id="title">Match Simulator</p>
+        <form>
+            <input list="countries" placeholder="Team 1" required>
+            <span>VS</span>
+            <input list="countries" placeholder="Team 2" required>
+            <input type="submit" value="Simulate" id="simulate">
+        </form>
+    </div>
+
+    <div id="winner-container">
+        <p id="winner">Winner</p>
+        <p id="winning-country">Germany</p>
+    </div>
+
+    <datalist id="countries">
+        <option value="Egypt">
+        <option value="Morocco">
+        <option value="Nigeria">
+        <option value="Senegal">
+        <option value="Tunisia">
+        <option value="Australia">
+        <option value="Iran">
+        <option value="Japan">
+        <option value="Korea Republic">
+        <option value="Saudi Arabia">
+        <option value="Belgium">
+        <option value="Belgium">
+        <option value="Croatia">
+        <option value="Denmark">
+        <option value="England">
+        <option value="France">
+        <option value="Germany">
+        <option value="Iceland">
+        <option value="Poland">
+        <option value="Portugal">
+        <option value="Russia">
+        <option value="Serbia">
+        <option value="Spain">
+        <option value="Sweden">
+        <option value="Switzerland">
+        <option value="Costa Rica">
+        <option value="Mexico">
+        <option value="Panama">
+        <option value="Argentina">
+        <option value="Brazil">
+        <option value="Colombia">
+        <option value="Peru">
+        <option value="Uruguay">
+    </datalist>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
