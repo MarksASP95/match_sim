@@ -8,6 +8,12 @@
     src: url('Roboto-Regular.ttf') format('truetype');
 }
 
+@media (max-width: 1034px){
+    #container span{
+        display: block;
+    }
+}
+
 body{
     font-family: 'Roboto';
 }
@@ -37,19 +43,44 @@ body{
     margin-top:30px;
 }
 
-input[list]{
+.teams{
     font-size: 16px;
-    height: 30px;;
+    height: 30px;
+    width: 200px;
 }
 
-#winner-container{
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+.winner-container{
+    transition: all .3 ease-in;
     position: absolute;
-    bottom:40%;
+    top: 110%;
     left:50%;
     transform: translate(-50%,0);
     text-align: center;
-    border: 1px dashed black;
+    opacity: 0;
 }
+
+#loading{
+    transition: all .3 ease-in;
+    position: absolute;
+    top: 110%;
+    left:50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    width: 100px;
+    opacity:0;
+}
+
+.fade-in{
+    animation: fadeIn .5s ease-in 1 forwards;
+}
+
 
 #winner{
     color:red;
@@ -58,4 +89,9 @@ input[list]{
 
 #winning-country{
     font-size: 2.5em;
+}
+
+#id{
+    font-size: 1.4em;
+    border:1px solid red;
 }

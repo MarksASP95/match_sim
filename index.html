@@ -12,54 +12,24 @@
     <div id="container">
         <p id="title">Match Simulator</p>
         <form>
-            <input list="countries" placeholder="Team 1" required>
+            <select placeholder="Team 1" class="teams" id="country1" required>
+                <option value="" disabled selected>Select a country</option>
+            </select>
             <span>VS</span>
-            <input list="countries" placeholder="Team 2" required>
-            <input type="submit" value="Simulate" id="simulate">
+            <select value="" placeholder="Team 2" class="teams" id="country2" required>
+                    <option value="" disabled selected>Select a country</option>
+            </select>
+            <button value="Simulate" id="simulate">Simulate</button>
         </form>
+        <div class="winner-container">
+            <p id="score"></p>
+            <p id="winner"></p>
+            <p id="winning-country"></p>
+        </div>
+        <img id="loading" src="loading.gif">
     </div>
-
-    <div id="winner-container">
-        <p id="winner">Winner</p>
-        <p id="winning-country">Germany</p>
-    </div>
-
-    <datalist id="countries">
-        <option value="Egypt">
-        <option value="Morocco">
-        <option value="Nigeria">
-        <option value="Senegal">
-        <option value="Tunisia">
-        <option value="Australia">
-        <option value="Iran">
-        <option value="Japan">
-        <option value="Korea Republic">
-        <option value="Saudi Arabia">
-        <option value="Belgium">
-        <option value="Belgium">
-        <option value="Croatia">
-        <option value="Denmark">
-        <option value="England">
-        <option value="France">
-        <option value="Germany">
-        <option value="Iceland">
-        <option value="Poland">
-        <option value="Portugal">
-        <option value="Russia">
-        <option value="Serbia">
-        <option value="Spain">
-        <option value="Sweden">
-        <option value="Switzerland">
-        <option value="Costa Rica">
-        <option value="Mexico">
-        <option value="Panama">
-        <option value="Argentina">
-        <option value="Brazil">
-        <option value="Colombia">
-        <option value="Peru">
-        <option value="Uruguay">
-    </datalist>
 
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 </html>
